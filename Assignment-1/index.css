@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+}
+:root{
+    --blue:#023E8A;
+    --primary-100:#0077C2;
+    --primary-300:#59a5f5;
+    --primary-200:#0096C7;
+    --accent-100:#0095ff;
+    --accent-200:#00619a;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#FFFFFF;
+    --bg-200:#f5f5f5;
+    --bg-300:#eeee;
+    --box-shadow: 0 0 1px #e7e7e7;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background-color: var(--bg-100);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 1.5rem 7%;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+    z-index: 1000;
+
+
+}
+
+
+nav a{
+    color: var(--primary-200);
+    font-size:1.75rem ;
+    font-weight: 500;
+    margin-left: 6rem;
+    text-decoration: none;
+}
+
+
+nav a:hover{
+    color: var(--blue);
+}
+
+
+.btn{
+    margin: 1.5rem;
+    margin-left: 3vw;
+    text-decoration: none;
+    background-color: var(--primary-100);
+    color: #fff;
+    border-radius: 0.8rem;
+    width: 10rem;
+    height: 4rem;
+    font-weight: 500;
+}
+
+
+.btn:hover{
+    color: var(--primary-100);
+    border: 2px solid var(--primary-100);
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+
+.home{
+    padding: 2rem 7%;
+    width: 100%;
+    height: 100%;
+}
+
+.main-home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 6%;
+
+}
+
+
+.main-inner-home{
+    flex: 1 45rem;
+}
+
+.main-inner-home h1{
+    color: var(--accent-100);
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 2rem ;
+    font-family: 'fredoka' ;
+    text-transform: capitalize;
+}
+
+.main-inner-home h2{
+    color: var(--primary-100);
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'fredoka' ;
+    margin: 0.5rem 0;
+}
+
+.main-inner-home p{
+    margin:1rem 0 2rem 0;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+    color: #023E8A;
+}
+
+.right-content img{
+    width: 65%;
+    margin-left: 20%;   
+    padding-right: 0;
+    box-shadow: 2.5rem 2.5rem var(--primary-300);
+    border-radius: 3rem;
+}
+
+.main-inner-home button{
+    margin: 1.75rem 2.75rem 0 0;
+    height: 5rem;
+    width: 11rem;
+    background-color: #023E8A;
+}
+
+
+/* Services */
+.services {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 7%;
+    /* background: linear-gradient(rgb(0, 255, 229), lightblue); */
+}
+
+.services-content {
+    margin-top: 6%;
+}
+
+.services-content h2 {
+    font-size: 45px;
+    text-align: center;
+    font-family: 'fredoka';
+    color: var(--text-100);
+    margin-bottom: 2rem;
+}
+
+.services-content span {
+    font-size: 45px;
+}
+
+.services-content p {
+    font-size: medium;
+    text-align: center;
+    line-height: 40px;
+    max-width: 75vw;
+    margin-left: 8rem;
+    color: var(--blue);
+}
+
+
+
+.dark-blue {
+    color: var(--primary-100);
+    font-family: 'fredoka';
+}
+
+.main-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.main-inner-services {
+    width: 250px;
+    height: 390px;
+    overflow: hidden;
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: var(--bg-100);
+    color: #333;
+    box-shadow: 0 5px 10px 0 var(--text-100);
+}
+
+.main-content h3 {
+    font-size: 22px;
+    font-weight: 650;
+    font-family: 'fredoka';
+    
+}
+
+
+
+.main-content p {
+    font-size: 13px;
+    line-height: 2rem;
+    padding: 1rem 2rem 0rem 1rem;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+    color: var(--text-100);
+}
+
+.main-content button {
+    align-self: end;
+    grid: row start 2px;
+}
+
+
+/* about-us section */
+.about-us{
+    width:100%;
+    height: 100%;
+    padding: 2rem 7%;
+    color: var(--text-100);
+}
+
+.about-us-container{
+    margin: 4% 0 5% 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.about-us img{
+    height: 425px;
+    border-radius: 3rem;
+    margin-right: 4rem;
+    margin-left: 3vw;
+    margin-top: 5vw;
+    box-shadow: -2.5rem  -2.5rem var(--primary-300 );
+}
+
+
+
+.about-us-content{
+    margin: 4rem 10rem 0 0;
+}
+
+.about-us-content h2{
+    font-family: 'fredoka';
+    font-size: 40px;
+    color: var(--text-100);
+    margin-bottom: 2rem;
+}
+
+.about-us p{
+    font-size: 15px;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.Square-content{
+    display:flex;
+}
+
+.square{
+    height: auto;
+    width: 200px;
+    border-radius: 2rem;
+    margin: 2rem 1rem 0 1rem;
+    overflow: hidden;
+    border: 2px solid;
+    
+}
+
+.square h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.square p{
+    padding: 10px;
+    text-align: center;
+}
+.color{
+    background-color: var(--primary-100);
+    color: var(--bg-100);
+}
+
+
+
+/* About-us */
+.about{
+    width:100%;
+    height: 100%;
+    padding: 2rem 7%;
+    margin:3% 0 6% 0;
+    /* background: linear-gradient(rgb(0, 255, 229) ,lightblue); */
+}
+.about-content{
+    margin-top: 3%;
+}
+
+.about-content h2{
+    font-size: 35px;
+    text-align:center;
+    font-family: 'fredoka' ;
+    color: var(--text-100);
+    margin-bottom: 2rem;
+}
+
+
+
+.about-content span{
+    font-size: 45px;
+}
+.about-content p{
+    font-size: medium;
+    text-align: center;
+    line-height: 40px;
+    max-width: 75vw;
+    margin-left: 8rem;
+    color: var(--blue);
+}
+
+.light-blue{
+    color: var(--primary-300);
+    font-family: 'fredoka' ;
+}
+.dark-blue {
+    color: var(--primary-100);
+    font-family: 'fredoka' ;
+}
+
+.main-about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   margin-top: 5rem;
+}
+
+.main-inner-about{
+
+    width: 250px;
+    height: 374px;
+    overflow: hidden;
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: var(--bg-300);
+    box-shadow: 0 5px 10px 0  var(--text-100);
+}
+
+.main-inner-about:hover{
+     transform: scale(120%);   
+     
+}
+
+
+.main-inner-about img{
+    /* position: relative; */
+    width: 150px;
+    height:150px;
+    border-radius: 100%;
+    margin:2rem 1.5rem 2rem 5rem;
+    
+}
+
+
+.main-content h3{
+    font-size: 22px;
+    font-weight: 650;
+    font-family: 'fredoka';
+    color: var(--primary-100);
+    /* background-color: var(--bg-300); */
+}
+
+.main-content h4{
+    font-family: 'fredoka';
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main-content p{
+    font-size: 13px;
+    line-height: 2rem;
+    color: var(--blue);
+    padding: 1rem 2rem 0rem 1rem;
+    /* background-color: var(--bg-300); */
+}
+
+.main-content{
+    /* background-color: var(--bg-300); */
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+}
+.about button{
+    margin-right: 7%;
+    float: right;
+}   
+
+
+
+/* Review */
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 7%;
+    background: linear-gradient(115deg, #62cff4, #2c67f2);
+}
+
+.r-heading{
+    font-size:35px;
+    padding: 0 0 0 0;
+    color: var(--bg-100);
+    text-align: center;
+    font-family: 'fredoka';
+    line-height: 5rem;
+}
+
+.r-heading h2{
+    font-family: 'fredoka';
+}
+
+.r-heading h3{
+    font-size: 30px;
+    color: var(--bg-100);
+    font-family: 'fredoka';
+}
+
+.review-container{
+    display: grid;
+    place-items: center;
+    margin-top: 6%;
+}
+
+.review-inner-container{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-inner-container .box{
+    background-color: var(--bg-100);
+    border-radius: 3rem;
+    padding: 25px;
+    width: 33%;
+}
+
+.quote{
+    font-size: 40px;
+    color: var(--primary-100);
+}
+
+.box{
+    font-size: 14px;
+    color: var(--text-100);
+    margin: 1rem;
+}
+
+
+.name{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'fredoka';
+}
+
+.info .job{
+    color: var(--primary-300);
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'fredoka';
+}
+
+.R-image{
+    
+    height: 80px;
+    width: 75px;
+    padding: 3px;
+    background: var(--primary-200);
+    border-radius:50%;
+    margin-top: 1rem;
+}
+.R-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+}
+
+/* contact */
+
+.contact{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem 7%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(110deg,rgb(141, 211, 234),rgb(19, 196, 250))
+}
+.contact-container{
+    width: 80%;
+    height: 75%;
+    background-color: var(--bg-100);
+    border-radius: 10px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px #000;
+    margin-left: 10%;
+}
+
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position:relative; */
+    margin: 80px;
+}
+
+
+.details{
+    margin: 1rem;
+    text-align: center;
+}
+
+.right-side{
+    width: 75%;
+    margin-left: 75px; 
+    
+}
+
+.details{
+    margin: 1rem;
+    text-align: center ;
+    color: #333;
+    font-family: 'fredoka';
+}
+
+.topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-one,.text-two{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topic-text{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary-100);
+    font-family: 'fredoka';
+}
+
+.right-side p{
+    font-size: 14px;
+    color: #333;
+}
+
+.input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side input,textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+
+}
+
+
+.message-box{
+    min-height: 110px;
+}
+
+textarea{
+    padding-top: 6px;
+}
+
+.right-side .btn{
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 0px;
+}
+
+footer{
+    background-color: var(--bg-100);
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+@media all and (max-width:1280px){
+    .about-us{
+        width:100vw;
+        height: 100vh;
+        padding: 2rem 7%;
+        padding-left: 0;
+        color: var(--text-100);
+    }
+    .about-us img{
+        height: 375px;
+        border-radius: 3rem;
+        margin-right: 3rem;
+        margin-top: 5vw;
+        box-shadow: -2.5rem  -2.5rem var(--primary-300 );
+    }
+
+    .square{
+        height: 150px;
+        width: 150px;
+        border-radius: 2rem;
+        margin: 2rem 1rem 0 1rem;
+        overflow: hidden;
+        border: 2px solid;
+        
+    }
+
+    .square h1{
+        font-size: 35px;
+    }
+
+    .square p{
+        font-size: 13px;
+    }
+    
+
+    .main-inner-about{
+
+        width: 250px;
+        height: 374px;
+        overflow: hidden;
+        margin: 1rem;
+        border-radius: 2rem;
+        background-color: var(--bg-100);
+        box-shadow: 0 5px 10px 0  var(--text-100);
+    }
+    
+    .main-inner-services {
+        width: 250px;
+        height: 390px;
+        overflow: hidden;
+        margin: 1rem;
+        border-radius: 2rem;
+        background-color: var(--bg-100);
+        color: #333;
+        box-shadow: 0 5px 10px 0 var(--text-100);
+    }
+
+}
